@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Web App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            min-height: 100vh;
+        }
+        .card {
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            border-radius: 1rem;
+            backdrop-filter: blur(4px);
+            background: rgba(255,255,255,0.85);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+            border: none;
+        }
+        .result {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        .model-select {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="card p-4" style="width: 100%; max-width: 500px;">
+            <h2 class="mb-4 text-center" style="font-weight:700; color:#6366f1;">Sentiment Analysis</h2>
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="review" class="form-label">Enter your review:</label>
+                    <textarea class="form-control" id="review" name="review" rows="4" required>{{ review }}</textarea>
+                </div>
+                <div class="model-select">
+                    <label for="model_choice" class="form-label">Select Model:</label>
+                    <select class="form-select" id="model_choice" name="model_choice">
+                        <option value="logistic" {% if model_choice == 'logistic' %}selected{% endif %}>Logistic Regression</option>
+                        <option value="naive_bayes" {% if model_choice == 'naive_bayes' %}selected{% endif %}>Naive Bayes</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Analyze Sentiment</button>
+            </form>
+            {% if sentiment %}
+            <div class="alert alert-light mt-4 text-center result">
+                <span>Predicted Sentiment:</span> <span>{{ sentiment }}</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

@@ -29,7 +29,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, Pandas, NLTK, spaCy, Scikit-learn  
 
-**Bonus:**
+**Bonus:** Completed extra tasks to explore additional techniques:  
 - Visualize most frequent positive and negative words  
 - Train using a simple neural network (Keras)  
 - Compare accuracy with Naive Bayes classifier  
@@ -47,7 +47,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, Pandas, Scikit-learn  
 
-**Bonus:**
+**Bonus:** Completed optional tasks to dig deeper:  
 - Experiment with XGBoost or LightGBM  
 - Visualize most frequent words per category using bar plots or word clouds  
 
@@ -64,7 +64,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, spaCy, Pandas, Scikit-learn  
 
-**Bonus:**
+**Bonus:** Completed extra tasks for additional insight:  
 - Visualize extracted entities with displaCy  
 - Compare results using different spaCy models  
 
@@ -80,7 +80,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, spaCy, Pandas  
 
-**Bonus:**
+**Bonus:** Completed optional tasks to extend learning:  
 - Compare NER performance using different spaCy models  
 - Visualize entities in text with colors and labels  
 
@@ -97,7 +97,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, Gensim, pyLDAvis, NLTK, spaCy, Scikit-learn  
 
-**Bonus:**
+**Bonus:** Completed extra tasks to explore alternative approaches:  
 - Compare LDA vs. NMF performance  
 - Visualize topic-word distributions with pyLDAvis or word clouds  
 
@@ -114,7 +114,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Hugging Face Transformers, Python, ROUGE  
 
-**Bonus:**
+**Bonus:** Completed optional tasks to go further:  
 - Try extractive summarization using TextRank or Gensim  
 - Fine-tune a pre-trained summarizer on custom datasets  
 
@@ -131,7 +131,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, Hugging Face Transformers  
 
-**Bonus:**
+**Bonus:** Completed extra tasks for deeper experimentation:  
 - Compare abstractive vs extractive summarization  
 - Experiment with fine-tuning on custom datasets  
 
@@ -148,7 +148,7 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 **Tools & Libraries:** Python, Sentence Transformers, Pandas, Scikit-learn  
 
-**Bonus:**
+**Bonus:** Completed extra tasks for better insight:  
 - Build a simple front-end or Streamlit app for resume upload and results  
 - Extract named entities (skills, experience) from resumes  
 
@@ -156,5 +156,5 @@ This repository contains a series of Natural Language Processing (NLP) projects 
 
 ## Notes
 - Each project includes full documentation of data exploration, preprocessing, model training, and evaluation.  
-- Bonus tasks are optional but recommended for deeper learning and performance improvements.  
+- Bonus tasks are optional, but I completed them where it added extra learning value.  
 - Datasets are publicly available on Kaggle or other open sources.
